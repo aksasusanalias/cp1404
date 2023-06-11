@@ -8,13 +8,26 @@ get score
 or display "excellent"
 """
 
-score = float(input("Enter score: "))
-if score < 0 or score > 100:
-    print("Invalid score")
-else:
-    if score >= 50 and score <= 89:
-        print("Passable")
+import random
+
+
+def main():
+    score = float(input("Enter score: "))
+    print(find_result(score))
+    score = random.uniform(0, 100)
+    print(f"{score:.2f}")
+    print(find_result(score))
+
+
+def find_result(score):
+    if score < 0 or score > 100:
+        return "Invalid score"
+    elif 50 <= score < 90:
+        return "Passable"
     elif score < 50:
-        print("Bad")
+        return "Bad"
     else:
-        print("Excellent")
+        return "Excellent"
+
+
+main()
