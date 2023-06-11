@@ -1,13 +1,13 @@
 def main():
     password = get_password()
-    print_asterisks(password)
+    asterisks = print_asterisks(password)
+    print(asterisks)
 
 
 def print_asterisks(password):
     word_len = len(password)
-    for i in range(1, word_len + 1):
-        print("*", end='')
-    print("\n")
+    asterisks = '*' * word_len
+    return "\n" + asterisks
 
 
 def get_password():
