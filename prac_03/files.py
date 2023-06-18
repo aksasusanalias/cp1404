@@ -17,6 +17,8 @@ number_2 = int(number_file.readline())
 result = number_1 + number_2
 print("The result is:", result)
 
+number_file.close()
+
 
 file = open(file_name, 'r')
 total = 0
@@ -25,3 +27,5 @@ for line in file:
     total += number
 print("The total is:", total)
 
+
+file.close()
