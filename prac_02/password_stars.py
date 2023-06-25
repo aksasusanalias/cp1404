@@ -6,6 +6,7 @@ def main():
 
 def print_asterisks(password):
     word_len = len(password)
+
     asterisks = '*' * word_len
     return "\n" + asterisks
 

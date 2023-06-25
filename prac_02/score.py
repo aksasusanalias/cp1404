@@ -18,7 +18,7 @@ def main():
 
 def find_result(score):
     if score < 0 or score > 100:
-        return "Invalid Score! Enter score between 0 to 100"
+        return "Invalid score"
     elif 50 <= score < 90:
         return "Passable"
     elif score < 50:
